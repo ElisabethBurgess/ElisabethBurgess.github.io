@@ -1,10 +1,14 @@
-<HTML>
+<!DOCTYPE html>
+<HTML lang="en">
 <head>
 <!--
 Name: Elisabeth Burgess
 Date: 16 January 2025
-Desc: Lab 1 Part 1 marking up a letter, intro to HTML
+File: index.html
+Desc: This is the home page for Lab 1 Part 1 
 -->
+<title>Lab 1 - Part 1</title>
+<meta charset="utf-8" />
 <style>
   body {
 max-width: 800px;
@@ -34,18 +38,18 @@ line-height: 1.5;
 </head>
 <body>
 <address class="sender-column">
-<strong>Dr. Eleanor Gaye</strong><br>
+<b>Dr. Eleanor Gaye</b><br>
 Awesome Science faculty<br>
 University of Awesome<br>
 Bobtown, CA 99999,<br>
 USA<br>
-<strong>Tel</strong>: 123-456-7890<br>
-<strong>Email</strong>: no_reply@example.com<br>
+<b>Tel</b>: 123-456-7890<br>
+<b>Email</b>: no_reply@example.com<br>
 </address>
-<p class="sender-column">20 January 2016</p>
+<time datetime="2016-01-20" class="sender-column">20 January 2016</time>
 
 <address>
-<strong>Miss Eileen Dover</strong><br>
+<b>Miss Eileen Dover</b><br>
 4321 Cliff Top Edge<br>
 Dover, CT9 XXX<br>
 UK<br>
@@ -55,16 +59,16 @@ UK<br>
 
 <p>Dear Eileen,</p>
 
-<p>Thank you for your recent application to join us at the University of Awesome's science faculty to study as part of your PhD next year. I will answer your questions one by one, in the following sections.</p>
+<p>Thank you for your recent application to join us at the University of Awesome's science faculty to study as part of your <abbr title="Doctor of Philosophy">PhD</abbr> next year. I will answer your questions one by one, in the following sections.</p>
 
 <h2>Starting dates</h2>
 
 <p>We are happy to accommodate you starting your study with us at any time, however it would suit us better if you could start at the beginning of a semester; the start dates for each one are as follows:</p>
 
 <ol>
-<li>First semester: 9 September 2016</li>
-<li>Second semester: 15 January 2017</li>
-<li>Third semester: 2 May 2017</li>
+<li>First semester: <time datetime="2016-09-09">9 September 2016</time></li>
+<li>Second semester: <time datetime="2017-01-15">15 January 2017</time></li>
+<li>Third semester: <time datetime="2017-05-02">2 May 2017</time></li>
 </ol>
 
 <p>Please let me know if this is ok, and if so which start date you would prefer.</p>
@@ -91,7 +95,7 @@ UK<br>
 
 <dl>
 <dt>Polynesian chicken dance</dt>
-<dd>A little known but very influential dance dating back as far as 300BC, a whole village would dance around in a circle like chickens, to encourage their livestock to be "fruitful".</dd>
+<dd>A little known but very influential dance dating back as far as 300<abbr title="Before Christ">BC</abbr>, a whole village would dance around in a circle like chickens, to encourage their livestock to be "fruitful".</dd>
 <dt>Icelandic brownian shuffle</dt>
 <dd>Before the Icelanders developed fire as a means of getting warm, they used to practice this dance, which involved huddling close together in a circle on the floor, and shuffling their bodies around in imperceptibly tiny, very rapid movements. One of my fellow students used to say that he thought this dance inspired modern styles such as Twerking.</dd>
 <dt>Arctic robot dance</dt>
@@ -101,8 +105,7 @@ UK<br>
 <p>For more of my research, see my <a href="http://example.com">exotic dance reseach page</a>.</p>
 
 <p>Yours sincerely,</p>
-Dr Eleanor Gaye
-
-University of Awesome motto: "Be awesome to each other." -- The memoirs of Bill S Preston, Esq
+<P>Dr Eleanor Gaye</P>
+<p>University of Awesome motto: <q>Be awesome to each other.</q> -- <cite>The memoirs of Bill S Preston, <abbr title="Esquire">Esq</abbr></cite></p>
 </body>
 </HTML>
