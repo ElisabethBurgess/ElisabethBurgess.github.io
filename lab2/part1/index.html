@@ -105,7 +105,7 @@
   <body>
     <header>
       <h1>Mozilla</h1>
-      <img src="firefox_logo-only_RGB.png" alt="An orange fox curled around the world.">
+      <img src="firefox_logo-only_RGB-120.png" alt="An orange fox curled around the world.">
       <!-- insert <img> element, link to the small
           version of the Firefox logo -->
 
@@ -126,16 +126,23 @@
       <div class="further-info">
         <!-- insert images with srcsets and sizes -->
         <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img src="firefox_logo-only_RGB-large-version.png" alt="An orange fox curled around the world.">
+          <img src="firefox_logo-only_RGB-400.png"
+              srcset="firefox_logo-only_RGB-120.png 1200w"
+              sizes="min-width: 600px, 
+                      max-width: 600px"
+               alt="An orange fox curled around the world.">
         </a>
         <a href="https://www.mozilla.org/">
-          <img src="mozilla-dinosaur-head.png" alt="A red cartoon dinosaur">
+          <img src="mozilla-dinosaur-head-400.png"
+               alt="A red cartoon dinosaur">
         </a>
         <a href="https://addons.mozilla.org/">
-          <img src="firefox-addons.jpg" alt="The firefox logo as a partially completed logo">
+          <img src="firefox-addons-400.jpg" 
+               alt="The firefox logo as a partially completed logo">
         </a>
         <a href="https://developer.mozilla.org/en-US/">
-          <img src="mdn.svg" alt="A white outline of the mozilla dinosaur on a blue background">
+          <img src="mdn.svg"
+               alt="A white outline of the mozilla dinosaur on a blue background">
         </a>
         <div class="clearfix"></div>
       </div>
@@ -151,3 +158,14 @@
     </main>
   </body>
 </html>
+
+<!--
+ srcset="firefox_logo-only_RGB-120.png"
+ sizes="(max-width: 120px), 600px"
+
+srcset="mozilla-dinosaur-head-120.png"
+sizes="(max-width: 120px), 600px"
+
+srcset="firefox-addons-120.jpg"
+sizes="(max-width: 120px),"
+-->
