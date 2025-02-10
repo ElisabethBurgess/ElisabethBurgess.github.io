@@ -8,13 +8,16 @@ div{
     width: 200px;
     padding-top: 90px;
     padding-bottom: 90px; 
-    
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    /* 1rem is the default font-size of the browser - often 16px, (16 * 1.125 = 18) */
+    /* 1rem is the default font-size of the browser - often 16px, (16 * 1.125 = 18) so 1.125rem makes the font 18px */
     font-size: 1.125rem;
     background-color: red;
     color: white;
     text-shadow: 3px 3px 5px black;
+    border-radius: 3px;
+    border: 1px solid rgb(179, 2, 2);
    
 }
   
