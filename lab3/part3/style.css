@@ -66,10 +66,31 @@
   /* WRITE YOUR CODE BELOW HERE */
 
 
+  html{
+    font-size: 10px;
+  }
+
   body {
     font-family:  'nobileregular';
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 1px;
+    word-spacing: 1px;
   }
 
   header{
     font-family: 'quicksandregular';
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-align: center;
   }
+  
+  h1, h2{
+    letter-spacing: 1px;
+  }
+
+  section > h2 + p{
+        text-indent: 20px;
+  }
+
+  
