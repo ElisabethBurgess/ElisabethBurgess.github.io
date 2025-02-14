@@ -1,5 +1,5 @@
 body {
-    background-color: #fff;
+    background-color: #ffffff;
     color: #333;
     margin: 0;
     font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
@@ -26,12 +26,17 @@ body {
   nav {
     background-color: #000;
     padding: .5em;
+    position: sticky;
+    top: 0;
   }
   
   nav ul {
+    display: flex;
     margin: 0;
     padding: 0;
     list-style: none;
+    align-items: center;
+    justify-content: space-around;
   }
   
   nav a {
@@ -48,4 +53,7 @@ body {
 
   .feature {
       width: 200px;
+      float: left;
+      margin-right: 20px;
   }
+
