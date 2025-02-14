@@ -93,4 +93,29 @@
         text-indent: 20px;
   }
 
+  a:link{
+    color: rgb(231, 140, 140);
+    text-decoration: black solid underline;
+  }
+
+  a:visited{
+    color: #a66;
+  }
+
+  a:focus{
+    color: rgb(73, 110, 73);
+    text-decoration: none;
+    outline: none;
+  }
+  
+
+  a:hover{
+    color: rgb(73, 110, 73); 
+    text-decoration: none;
+  }
+  
+  a:active{
+    color: rgb(164, 48, 164);
+  }
+
   
