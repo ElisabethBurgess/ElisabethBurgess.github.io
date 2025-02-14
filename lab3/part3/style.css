@@ -118,4 +118,40 @@
     color: rgb(164, 48, 164);
   }
 
-  
+   
+
+  a[href^="http"]::after{
+    content: "";
+    display: inline-block;
+    width: 0.8em;
+    height: 0.8em;
+    margin-left: 0.25em;
+
+    background-size: 100%;
+    background-image: url("external-link-52.png");
+  }
+
+  li{
+    line-height: 2.5rem;
+  }
+
+  ul {
+    list-style-type:square;
+  }
+
+  ol{
+    list-style-type:upper-roman;
+  }
+
+  nav > ul{
+    list-style-type: none;
+  }
+
+  nav > ul > li {
+    border: 3px solid #a66;
+    border-radius: 4px;
+    width: 200px;
+    margin: 25px;
+    text-align: center;
+    padding: 10px;
+  }
