@@ -1,3 +1,12 @@
+/*
+Author: Elisabeth Burgess
+File: style.css
+Date: 14 Februrary 2025
+Description: Creating a better layout for a college website
+*/
+
+
+
 /* General setup */
 
 
@@ -68,10 +77,10 @@
 
   html{
     font-size: 10px;
+    font-family:  'nobileregular';
   }
 
   body {
-    font-family:  'nobileregular';
     font-size: 1.5rem;
     line-height: 2.5rem;
     letter-spacing: 1px;
@@ -85,21 +94,31 @@
     text-align: center;
   }
   
+  h1{
+    text-align: center;
+  }
+
+  h2{
+    font-size: 2.5rem;
+  }
+
   h1, h2{
     letter-spacing: 1px;
+    font-family: 'quicksandregular';
   }
 
   section > h2 + p{
-        text-indent: 20px;
+    text-indent: 20px;
   }
 
   a:link{
-    color: rgb(231, 140, 140);
+    color: #a66;
     text-decoration: black solid underline;
+
   }
 
   a:visited{
-    color: #a66;
+    color: rgb(137, 143, 82);
   }
 
   a:focus{
@@ -131,6 +150,10 @@
     background-image: url("external-link-52.png");
   }
 
+  p{
+    line-height: 2.5rem;
+  }
+
   li{
     line-height: 2.5rem;
   }
@@ -155,3 +178,17 @@
     text-align: center;
     padding: 10px;
   }
+
+  nav > ul > li > a:focus {
+      color: rgb(78, 54, 80);
+  }
+
+  nav > ul > li > a:hover {
+    color: rgb(78, 54, 80);
+  }
+
+  nav > ul > li > a:active {
+    color: rgb(131, 146, 45);
+  }
+
+
