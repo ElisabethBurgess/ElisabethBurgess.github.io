@@ -30,7 +30,8 @@ body {
     max-width: 980px;
     display: grid;
     grid-template-areas: "article aside";
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
+    gap: 10px;
   }
   
   nav {
@@ -67,7 +68,7 @@ body {
   .feature {
       width: 200px;
       float: left;
-      margin-right: 20px;
+      margin: 0px 20px 0px 0px;
   }
 
   article{
