@@ -49,9 +49,11 @@ function result() {
   }
 
   if(document.getElementById("uk").checked) {
-    const weight = Math.round(300);
-    const temperature =  Math.round(94);
-
+    const weight = Math.round(300/14) + " stones";
+    const temperature =  Math.round(((94-32)*5)/9) + " centigrade";
+    newStory = newStory.replace('94 fahrenheit', weight);
+    newStory = newStory.replace('300 pounds', temperature);
+    
   }
 
   story.textContent = ;
