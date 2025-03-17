@@ -1,5 +1,6 @@
 /* 
 Author: Elisabeth Burgess
+File: main.js
 Date: March 17, 2025
 Description: Creating a 'Silly story generator' 
 */
@@ -50,12 +51,12 @@ function result() {
 
   if(document.getElementById("uk").checked) {
     const weight = Math.round(300/14) + " stones";
-    const temperature =  Math.round(((94-32)*5)/9) + " centigrade";
-    newStory = newStory.replace('94 fahrenheit', weight);
-    newStory = newStory.replace('300 pounds', temperature);
-    
+    const temperature =  Math.round((94-32)*5/9) + " centigrade";    
+    newStory = newStory.replaceAll('300 pounds', weight);
+    newStory = newStory.replaceAll('94 fahrenheit', temperature);
   }
 
-  story.textContent = ;
+  story.textContent = newStory;
   story.style.visibility = 'visible';
 }
+
