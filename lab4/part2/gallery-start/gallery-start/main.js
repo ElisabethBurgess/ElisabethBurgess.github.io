@@ -18,11 +18,13 @@ const filenames = [pic1.jpg, pic2.jpg, pic3.jpg, pic4.jpg, pic5.jpg];
 const alternativeText = ["Closeup of a human eye", "Closeup of sand", "Closeup of purple and white flowers", "Egyption drawings and hyroglyphics", "A brown butterfly"];
 
 /* Looping through images */
+for (let i = 0; i < filenames.length; i++){
+    const newImage = document.createElement('img');
+    newImage.setAttribute('src', filenames[i]);
+    newImage.setAttribute('alt', alternativeText[i]);
+    thumbBar.appendChild(newImage);   
+   
+}
 
-
-const newImage = document.createElement('img');
-newImage.setAttribute('src', xxx);
-newImage.setAttribute('alt', xxx);
-thumbBar.appendChild(newImage);
 
 /* Wiring up the Darken/Lighten button */
