@@ -1,3 +1,10 @@
+/*
+Author: Elisabeth Burgess (and MDN)
+File: main.js
+Date: March 17, 2025
+Description: Image gallery
+*/
+
 const displayedImage = document.querySelector('.displayed-img');
 const thumbBar = document.querySelector('.thumb-bar');
 
