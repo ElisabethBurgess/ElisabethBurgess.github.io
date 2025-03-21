@@ -1,3 +1,11 @@
+/*
+    Author: Elisabth Burgess
+    File: index.html
+    Date: March 21, 2025
+    Description: Bouncing balls demo
+*/
+
+
 // setup canvas
 
 const canvas = document.querySelector("canvas");
