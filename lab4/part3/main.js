@@ -50,7 +50,7 @@ class Ball{
         }
 
         if ((this.x - this.size) <= 0){
-            this.velX = -(this.velY);
+            this.velX = -(this.velX);
         }
 
         if ((this.y + this.size) >= height){
@@ -63,6 +63,20 @@ class Ball{
 
         this.x += this.velX;
         this.y += this.velY;
+    }
+
+    collisionDetect(){
+        for (const ball of balls){
+            if (this !== ball){
+                const dx = this.x - ball.x;
+                const dy = this.y - ball.y;
+                const distance = Math.sqrt(dx * dx + dy * dy);
+
+                if (distance < this.size + ball.size){
+                    ball.color = this.color = randomRGB();
+                }
+            }
+        }
     }
 }
 
@@ -80,17 +94,22 @@ while (balls.length < 25){
         randomRGB(),
         size,
     );
+
+
     balls.push(ball);
 }
 
 function loop(){
-    ctx.fillStyple = "rgb(0 0 0 / 25%)";
+    ctx.fillStyle = "rgb(0 0 0 / 50%)";
     ctx.fillRect(0, 0, width, height);
 
     for (const ball of balls){
         ball.draw();
         ball.update();
+        ball.collisionDetect();
     }
 
     requestAnimationFrame(loop);
 }
+
+loop();
