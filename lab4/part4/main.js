@@ -1,3 +1,10 @@
+/*
+Author: Elisabeth Burgess
+    File: index.html
+    Date: March 21, 2025
+    Description: Bouncing balls demo with added features.
+*/
+
 // set up canvas
 
 const canvas = document.querySelector("canvas");
@@ -16,6 +23,15 @@ function random(min, max) {
 
 function randomRGB() {
   return `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
+}
+
+class shape {
+  constructor(x, y, velX, velY){
+    this.x = x;
+    this.y = y;
+    this.velX = velX;
+    this.velY = velY;
+  }
 }
 
 class Ball {
@@ -70,6 +86,8 @@ class Ball {
     }
   }
 }
+
+
 
 const balls = [];
 
