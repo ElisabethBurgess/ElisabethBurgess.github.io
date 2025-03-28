@@ -1,6 +1,6 @@
 /*
-Author: Elisabeth Burgess
-    File: index.html
+    Author: Elisabeth Burgess
+    File: main.js
     Date: March 21, 2025
     Description: Bouncing balls demo with added features.
 */
@@ -12,6 +12,8 @@ const ctx = canvas.getContext("2d");
 
 const width = (canvas.width = window.innerWidth);
 const height = (canvas.height = window.innerHeight);
+
+const scoreCounter = document.querySelector("p");
 
 // function to generate random number
 
@@ -85,14 +87,14 @@ class Ball extends Shape{
   }
 }
 
-class EvilCircle extends Shape {
+class EvilCircle extends Shape{
   constructor(x, y,){
     super(x, y, 20, 20)
-    this.color = white;
+    this.color = "white";
     this.size = 10;
 
     window.addEventListener("keydown", (e) => {
-      switch (e.key){
+      switch (e.key) {
         case "a":
           this.x -= this.velX;
           break;
@@ -170,14 +172,26 @@ while (balls.length < 25) {
   balls.push(ball);
 }
 
+
+scoreCounter.textContent =  "Ball Count: " + balls.length;
+const evilCircle = new EvilCircle(640, 290);
+  
 function loop() {
   ctx.fillStyle = "rgba(0, 0, 0, 0.25)";
   ctx.fillRect(0, 0, width, height);
-
+  let caught_balls = 0;
   for (const ball of balls) {
-    ball.draw();
-    ball.update();
-    ball.collisionDetect();
+    if (ball.exists){
+      ball.draw();
+      ball.update();
+      ball.collisionDetect();
+    } else {
+      caught_balls += 1;
+    }
+    scoreCounter.textContent = "Ball Count: " + String(balls.length - caught_balls);
+    evilCircle.draw();
+    evilCircle.checkBounds();
+    evilCircle.collisionDetect();
   }
 
   requestAnimationFrame(loop);
