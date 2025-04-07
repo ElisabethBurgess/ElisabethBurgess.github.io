@@ -1,3 +1,9 @@
+/* Author: Elisabeth Burgess
+File: main.js
+Date: April 7, 2025
+Description: Accessibility Assessment
+*/
+
 // functionality for showing/hiding the comments section
 
 const showHideBtn = document.querySelector('.show-hide');
