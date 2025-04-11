@@ -13,7 +13,7 @@ html, body {
 }
 
 html {
-  font-size: 10px;
+  font-size: 12pt;
   background-color: rgb(97, 97, 124);
 }
 
@@ -73,7 +73,7 @@ article {
 
 nav {
   height: 50px;
-  background-color: ff80ff;
+  background-color: #dbbce1;
   display: flex;
   padding: 1% 0;
   margin-bottom: 10px;
