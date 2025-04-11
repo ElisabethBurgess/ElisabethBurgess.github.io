@@ -25,29 +25,30 @@ body {
 
 /* || typography */
 
-h1[size="7"], h2[size="6"], h3[size="5"] {
+header, h2, h3 {
   font-family: 'Sonsie One', cursive;
   color: #2a2a2a;
 }
 
-p, input, li, table, label {
+p, input, li, table, label, button {
   font-family: 'Open Sans Condensed', sans-serif;
   color: #2a2a2a;
 }
 
-h1[size="7"] {
+header {
   font-size: 4rem;
   text-align: center;
   color: white;
   text-shadow: 2px 2px 10px black;
+  margin: 30px;
 }
 
-h2[size="6"] {
+h2{
   font-size: 3rem;
   text-align: center;
 }
 
-h3[size="5"] {
+h3 {
   font-size: 2.2rem;
 }
 
@@ -107,7 +108,7 @@ nav .search {
   padding: 0 2em;
 }
 
-.search input {
+.search input, .search button {
   font-size: 1.6rem;
   height: 32px;
 }
@@ -116,7 +117,7 @@ nav .search {
   flex: 3;
 }
 
-.search input[type="submit"] {
+.search button[type="submit"] {
   flex: 1;
   margin-left: 1rem;
   background: #333;
@@ -212,7 +213,7 @@ audio {
   font-size: 1.5rem;
 }
 
-.comment-form input {
+.comment-form button, .comment-form input {
   margin-left: 1rem;
   flex: 6;
 }
@@ -222,18 +223,18 @@ audio {
   width: 150px;
 }
 
-.comment-form input, .comment-form label, .show-hide {
+.comment-form input, .comment-form label, .show-hide, .comment-form button {
   font-size: 1.6rem;
   line-height: 32px;
 }
 
-.comment-form input[type="submit"], .show-hide {
+.comment-form button[type="submit"], .show-hide {
   background: #333;
   border: 0;
   color: white;
 }
 
-.comment-form input[type="submit"] {
+.comment-form button[type="submit"] {
   width: 30%;
   display: block;
   margin: 0 auto;
