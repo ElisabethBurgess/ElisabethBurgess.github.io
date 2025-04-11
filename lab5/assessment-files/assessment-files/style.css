@@ -25,7 +25,7 @@ body {
 
 /* || typography */
 
-header, h2, h3 {
+h1, h2, h3 {
   font-family: 'Sonsie One', cursive;
   color: #2a2a2a;
 }
@@ -35,7 +35,7 @@ p, input, li, table, label, button {
   color: #2a2a2a;
 }
 
-header {
+h1 {
   font-size: 4rem;
   text-align: center;
   color: white;
